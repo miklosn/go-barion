@@ -2,6 +2,7 @@ package barion
 
 import "fmt"
 
+// Locale
 type Locale int
 
 const (

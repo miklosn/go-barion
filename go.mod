@@ -4,6 +4,8 @@ go 1.14
 
 require (
 	github.com/davecgh/go-spew v1.1.1
+	github.com/go-chi/chi v4.1.2+incompatible
+	github.com/go-chi/httplog v0.1.6 // indirect
 	github.com/go-resty/resty/v2 v2.3.0
 	github.com/golangci/golangci-lint v1.28.3 // indirect
 	github.com/jarcoal/httpmock v1.0.5
@@ -11,6 +13,8 @@ require (
 	github.com/mattn/go-shellwords v1.0.10 // indirect
 	github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d // indirect
 	github.com/msoap/go-carpet v0.0.0-20200322162101-5c3af5da7cbe // indirect
+	github.com/namsral/flag v1.7.4-pre
+	github.com/rs/zerolog v1.18.1-0.20200514152719-663cbb4c8469
 	github.com/shopspring/decimal v1.2.0
 	golang.org/x/net v0.0.0-20200625001655-4c5254603344
 	golang.org/x/sys v0.0.0-20200625212154-ddb9806d33ae // indirect

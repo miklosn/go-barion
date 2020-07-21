@@ -6,4 +6,6 @@ type FundingSource int
 const (
 	All FundingSource = iota
 	Balance
+	BankCard
+	BankTransfer
 )

@@ -8,9 +8,9 @@ import (
 	"fmt"
 )
 
-const _FundingSourceName = "AllBalance"
+const _FundingSourceName = "AllBalanceBankCardBankTransfer"
 
-var _FundingSourceIndex = [...]uint8{0, 3, 10}
+var _FundingSourceIndex = [...]uint8{0, 3, 10, 18, 30}
 
 func (i FundingSource) String() string {
 	if i < 0 || i >= FundingSource(len(_FundingSourceIndex)-1) {
@@ -19,11 +19,13 @@ func (i FundingSource) String() string {
 	return _FundingSourceName[_FundingSourceIndex[i]:_FundingSourceIndex[i+1]]
 }
 
-var _FundingSourceValues = []FundingSource{0, 1}
+var _FundingSourceValues = []FundingSource{0, 1, 2, 3}
 
 var _FundingSourceNameToValueMap = map[string]FundingSource{
-	_FundingSourceName[0:3]:  0,
-	_FundingSourceName[3:10]: 1,
+	_FundingSourceName[0:3]:   0,
+	_FundingSourceName[3:10]:  1,
+	_FundingSourceName[10:18]: 2,
+	_FundingSourceName[18:30]: 3,
 }
 
 // FundingSourceString retrieves an enum value from the enum constants string name.
